@@ -1,0 +1,88 @@
+@import "./normalize";
+@import "./mixins";
+
+:root {
+  --bg-color: #19191a;
+  --fg-color: #f2f2f2;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--fg-color, #f2f2f2);
+  background-color: var(--bg-color, #19191a);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  padding: 15px;
+}
+
+.bg-gradient {
+  background: radial-gradient(
+    92.19% 89.74% at 0 100%,
+    rgba(31, 169, 17, 0.81) 17.21%,
+    #2f15d0 64.58%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 100dvh;
+  height: 100dvh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+button {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  line-height: 1.2;
+}
+
+.big-button {
+  border-radius: 8px;
+  border: 1px solid var(--bg-color);
+  background: var(--bg-color);
+  color: white;
+  padding: 18px;
+}
+
+.small-btn {
+  color: var(--bg-color);
+  font-size: 9px;
+  font-weight: 600;
+  padding-right: 0;
+}
+
+button:focus,
+button:focus-visible {
+  //outline: 4px auto -webkit-focus-ring-color;
+}
+
+.section-title {
+  font-size: 31px;
+  font-weight: 500;
+  &.has-text-shadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.section-subtitle {
+  opacity: 0.7;
+}
+
+@import "./components/notificationSection";
