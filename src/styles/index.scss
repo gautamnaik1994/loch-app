@@ -73,6 +73,10 @@ button:focus-visible {
   //outline: 4px auto -webkit-focus-ring-color;
 }
 
+section + section {
+  margin-top: 4rem;
+}
+
 .section-title {
   font-size: 31px;
   font-weight: 500;
@@ -86,3 +90,4 @@ button:focus-visible {
 }
 
 @import "./components/notificationSection";
+@import "./components/watchlistSection";
