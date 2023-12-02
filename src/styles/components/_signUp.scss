@@ -1,0 +1,71 @@
+.sign-up {
+  position: sticky;
+  bottom: 0;
+  margin: 0 -15px;
+  background: #fff;
+  padding: 35px 15px 15px 15px;
+  z-index: 10;
+
+  color: var(--bg-color);
+  box-shadow:
+    0px 14px 64px -4px rgba(24, 39, 75, 0.12),
+    0px 8px 22px -6px rgba(24, 39, 75, 0.12);
+
+  input[type="email"] {
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    font-size: 16px;
+    height: 59px;
+    display: block;
+    width: 100%;
+    padding: 20px 24px;
+    box-shadow:
+      0px 1px 1px 0px rgba(0, 0, 0, 0.04),
+      0px 4px 10px 0px rgba(0, 0, 0, 0.04);
+  }
+  h1 {
+    color: #b0b1b3;
+    margin: 0;
+  }
+  p {
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .input-group {
+    margin: 20px 0 15px 0;
+    .error-message {
+      color: tomato;
+      margin-top: 8px;
+    }
+  }
+
+  @include desktop {
+    position: fixed;
+    right: 0;
+    display: grid;
+    place-content: center;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 640px;
+    .inner {
+      width: 340px;
+    }
+    .input-group {
+      margin: 32px 0 24px 0;
+    }
+
+    h1 {
+      font-size: 39px;
+      margin-bottom: 32px;
+    }
+    p {
+      margin: 0 -20px;
+      margin-top: 42px;
+      text-align: center;
+    }
+  }
+}

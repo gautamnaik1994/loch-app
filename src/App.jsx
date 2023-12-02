@@ -1,6 +1,7 @@
 import NotificationSection from "./components/NotificationSection";
 import WatchlistSection from "./components/WatchlistSection";
 import TestimonialsSection from "./components/TestimonialsSection";
+import SignUp from "./components/SignUp";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <NotificationSection />
       <WatchlistSection />
       <TestimonialsSection />
+      <SignUp />
     </>
   );
 }

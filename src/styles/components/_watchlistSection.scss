@@ -1,7 +1,19 @@
 .watchlist-section {
-  h1 {
-  }
   .screenshot {
     border-radius: 12px;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    .right-sec {
+      flex-basis: 305px;
+      text-align: right;
+    }
+    .screenshot {
+      width: 335px;
+      height: auto;
+    }
   }
 }

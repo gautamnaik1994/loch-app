@@ -20,8 +20,12 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-weight: 500;
+}
+
 .container {
-  padding: 15px;
+  padding: 0 15px;
   @include desktop {
     width: 950px;
     padding: 0;
@@ -58,12 +62,14 @@ button {
   line-height: 1.2;
 }
 
-.big-button {
+.big-btn {
   border-radius: 8px;
   border: 1px solid var(--bg-color);
   background: var(--bg-color);
   color: white;
   padding: 18px;
+  display: block;
+  width: 100%;
 }
 
 .small-btn {
@@ -103,3 +109,4 @@ hr {
 @import "./components/notificationSection";
 @import "./components/watchlistSection";
 @import "./components/testmonialSection";
+@import "./components/signUp";
