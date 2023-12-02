@@ -87,4 +87,16 @@
   .swiper-slide {
     width: fit-content !important;
   }
+
+  @include desktop {
+    display: flex;
+    gap: 57px;
+    .left-sec {
+      flex-basis: 322px;
+    }
+    .notification-carousel {
+      margin: 0;
+      flex-basis: 361px;
+    }
+  }
 }

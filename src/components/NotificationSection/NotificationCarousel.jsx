@@ -9,6 +9,7 @@ import "swiper/css/autoplay";
 export default function Carousel() {
   return (
     <Swiper
+      className="notification-carousel"
       modules={[Autoplay, Navigation]}
       spaceBetween={15}
       slidesPerView="auto"

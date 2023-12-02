@@ -1,5 +1,6 @@
-import NotificationSection from "./components/NotificationSection/NotificationSection";
-import WatchlistSection from "./components/WatchlistSection/watchlistSection";
+import NotificationSection from "./components/NotificationSection";
+import WatchlistSection from "./components/WatchlistSection";
+import TestimonialsSection from "./components/TestimonialsSection";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div className="bg-gradient" />
       <NotificationSection />
       <WatchlistSection />
+      <TestimonialsSection />
     </>
   );
 }
