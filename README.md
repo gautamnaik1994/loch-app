@@ -33,3 +33,18 @@ All static image assets are included in `public` directory and referenced direct
 <img src="image_name">
 ```
 
+## Screenshots
+
+### Working
+
+![Screenshot](./screenshots/vid.gif)
+
+### Desktop
+
+![Screenshot](./screenshots/desktop.png)
+
+### Mobile
+
+![Screenshot](./screenshots/mob.png)
+
+
