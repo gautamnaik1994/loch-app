@@ -31,7 +31,8 @@ export default function Carousel() {
             really interesting is watching the whales though. No one else has
             made whale tracking so simple.”
           </p>
-      </div>
+        </div>
+        <div className="t-slide"/>
       </div>
        
      

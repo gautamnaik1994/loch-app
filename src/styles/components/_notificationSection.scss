@@ -1,4 +1,5 @@
 .notification-section {
+  margin-top: 86px;
   .n-slide {
     display: flex!important;
     flex-direction: column;
@@ -85,16 +86,6 @@
       }
     }
   }
-  .embla{
-    overflow: hidden;
-  }
-  .embla__container {
-    display: flex;
-  }
-  .embla__slide {
-    flex: 0 0 190px; /* Slide covers 80% of the viewport */
-  }
-
   @include desktop {
     display: flex;
     gap: 57px;

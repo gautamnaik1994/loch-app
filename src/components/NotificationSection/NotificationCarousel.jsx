@@ -4,13 +4,15 @@ const settings = {
   dots: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   autoplay: true,
   autoplaySpeed: 3000,
   // centerMode: true,
-  variableWidth: true
+  rows:1,
+  variableWidth: true,
+
 };
 
 export default function Carousel() {

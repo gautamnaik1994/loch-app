@@ -1,12 +1,18 @@
 .testimonial-section {
   position: relative;
+  margin-bottom: 60px;
   h1 {
     font-size: 25px;
+    margin-top: 0;
     margin-bottom: 20px;
   }
-  hr{
+  .inner{
+    hr{
+      margin-bottom: 0;
+     }
     margin-bottom: 40px;
   }
+ 
   .logo{
     position: absolute;
     left: 0;
@@ -19,6 +25,8 @@
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    width:100%;
+  
   }
   .t-slides::-webkit-scrollbar {
     display: none;
@@ -51,10 +59,21 @@
       color: #96979a;
       margin-left: 8px;
     }
+    &:last-child{
+      display: none;
+    }
   }
   @include desktop {
+    margin-top: 0;
+    .inner{
+      width: var(--section-width);
+    }
     h1{
       text-align: right;
+    }
+    .t-slides{
+      width: 750px;
+      padding-right: 100px;
     }
     .t-slide {
       flex-shrink: 0;
@@ -68,7 +87,9 @@
         margin-left: 250px;
       }
       &:last-child{
-        margin-right: 100px;
+        display: block;
+        width:300px;
+        background: transparent;
       }
     }
   }

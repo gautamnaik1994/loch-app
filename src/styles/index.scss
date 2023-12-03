@@ -6,6 +6,8 @@
 :root {
   --bg-color: #19191a;
   --fg-color: #f2f2f2;
+  --left-padding:250px;
+  --section-width:678px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.2;
   font-weight: 500;
@@ -29,9 +31,8 @@ h1 {
 .container {
   padding: 0 15px;
   @include desktop {
-    width:1140px;
     padding: 0;
-    margin: 0 auto;
+    padding-left: var(--left-padding);
   }
 }
 
