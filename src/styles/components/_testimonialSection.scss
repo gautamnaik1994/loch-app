@@ -18,6 +18,7 @@
     left: 0;
     bottom: 0;
     z-index: -1;
+    display: none;
   }
   .t-slides{
     display: flex;
@@ -64,6 +65,9 @@
     }
   }
   @include desktop {
+    .logo{
+      display: block;
+    }
     margin-top: 0;
     .inner{
       width: var(--section-width);
@@ -84,7 +88,7 @@
         flex-basis:531px;
       }
       &:first-child{
-        margin-left: 250px;
+        margin-left: 100px;
       }
       &:last-child{
         display: block;

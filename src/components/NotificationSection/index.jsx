@@ -13,7 +13,7 @@ const NotificationSection = () => (
       </p>
     </div>
     <div className='right-sec'>
-    <NotificationCarousel />
+      <NotificationCarousel />
     </div>
 
   </section>

@@ -37,18 +37,16 @@ h1 {
 }
 
 .bg-gradient {
-  background: radial-gradient(
-    92.19% 89.74% at 0 100%,
-    rgba(31, 169, 17, 0.81) 17.21%,
-    #2f15d0 64.58%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  width: 100dvh;
-  height: 100dvh;
+  background: radial-gradient(116.19% 88.74% at 2% 89%, rgba(31, 169, 17, 0.81) -6.79%, #2f15d0 63.58%, rgba(0, 0, 0, 0) 100%);
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   z-index: -1;
+  bottom: 0;
+  @include desktop {
+    background: radial-gradient(69.19% 82.74% at 2% 85%, rgba(31, 169, 17, 0.81) 17.21%, #2f15d0 64.58%, rgba(0, 0, 0, 0) 100%);
+  }
 }
 
 button {
@@ -63,6 +61,7 @@ button {
   background-color: transparent;
   border: 1px solid transparent;
   line-height: 1.2;
+  cursor: pointer;
 }
 
 .big-btn {
