@@ -1,5 +1,7 @@
 @import "./normalize";
 @import "./mixins";
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
 
 :root {
   --bg-color: #19191a;
@@ -27,7 +29,7 @@ h1 {
 .container {
   padding: 0 15px;
   @include desktop {
-    width: 950px;
+    width:1140px;
     padding: 0;
     margin: 0 auto;
   }
@@ -108,5 +110,5 @@ hr {
 
 @import "./components/notificationSection";
 @import "./components/watchlistSection";
-@import "./components/testmonialSection";
+@import "./components/testimonialSection";
 @import "./components/signUp";

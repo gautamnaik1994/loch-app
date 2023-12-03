@@ -1,23 +1,10 @@
-import { Autoplay, Navigation, Pagination, FreeMode } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/free-mode";
-import "swiper/css/autoplay";
+import Draggable from '../../common/Draggable';
 
 export default function Carousel() {
   return (
-    <Swiper
-      modules={[Navigation, FreeMode]}
-      spaceBetween={20}
-      slidesPerView={2}
-      navigation={false}
-      centeredSlides={false}
-    >
-      <SwiperSlide>
-        <div className="t-slide ">
+    <Draggable>
+      <div className="t-slides">
+         <div className="t-slide ">
           <div className="top-section">
             Jack F<span>Ex Blackrock PM</span>
           </div>
@@ -26,8 +13,6 @@ export default function Carousel() {
             into one unified app.”
           </p>
         </div>
-      </SwiperSlide>
-      <SwiperSlide>
         <div className="t-slide ">
           <div className="top-section">
             Yash P<span>Research, 3poch Crypto Hedge Fund</span>
@@ -37,9 +22,7 @@ export default function Carousel() {
             trends markets without it. I'm addicted!”
           </p>
         </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="t-slide ">
+        <div className="t-slide t-3">
           <div className="top-section">
             Shiv S<span>Co-Founder Magik Labs</span>
           </div>
@@ -48,8 +31,10 @@ export default function Carousel() {
             really interesting is watching the whales though. No one else has
             made whale tracking so simple.”
           </p>
-        </div>
-      </SwiperSlide>
-    </Swiper>
+      </div>
+      </div>
+       
+     
+    </Draggable>
   );
 }

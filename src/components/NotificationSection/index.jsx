@@ -12,7 +12,10 @@ const NotificationSection = () => (
         or when a dormant whale you care about becomes active.
       </p>
     </div>
+    <div className='right-sec'>
     <NotificationCarousel />
+    </div>
+
   </section>
 );
 

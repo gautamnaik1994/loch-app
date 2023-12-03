@@ -10,7 +10,7 @@ function App() {
       <NotificationSection />
       <WatchlistSection />
       <TestimonialsSection />
-      <SignUp />
+      {/* <SignUp /> */}
     </>
   );
 }
