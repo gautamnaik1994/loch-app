@@ -1,10 +1,10 @@
-import Draggable from '../../common/Draggable';
+import Draggable from "../../common/Draggable";
 
-export default function Carousel() {
+function Carousel() {
   return (
     <Draggable>
       <div className="t-slides">
-         <div className="t-slide ">
+        <div className="t-slide ">
           <div className="top-section">
             Jack F<span>Ex Blackrock PM</span>
           </div>
@@ -32,10 +32,10 @@ export default function Carousel() {
             made whale tracking so simple.”
           </p>
         </div>
-        <div className="t-slide"/>
+        <div className="t-slide" />
       </div>
-       
-     
     </Draggable>
   );
 }
+
+export default Carousel;

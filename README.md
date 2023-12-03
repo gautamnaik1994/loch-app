@@ -1,8 +1,22 @@
-# React + Vite
+# Loch App Frontend Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The goal of this assignment was to convert the given figma design link into a website using ReactJS.  
 
-Currently, two official plugins are available:
+## Deliverable Link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The website is hosted on Github Pages at https://gautamnaik1994.github.io/loch-app/  
+The deployement is performed using Github Actions on every commit to main branch.
+
+## Installation Steps
+
+- `git clone https://github.com/gautamnaik1994/loch-app.git`
+- `cd loch-app && npm install`
+- To run the app in development mode `npm run dev`
+- Navigate to http://localhost:3000
+- To build the application in production mode `npm run build`
+
+## Tech Stack
+
+- ReactJS
+- SCSS for styling
+- [React Slick Slider](https://www.npmjs.com/package/react-slick) for the notification carousel.

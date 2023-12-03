@@ -1,10 +1,10 @@
 .notification-section {
   margin-top: 86px;
   .n-slide {
-    display: flex!important;
+    display: flex !important;
     flex-direction: column;
     justify-content: space-between;
-    width: 190px!important;
+    width: 190px !important;
     height: 172px;
     border-radius: 8px;
     padding: 14px;
@@ -86,12 +86,12 @@
       }
     }
   }
-  .right-sec{
+  .right-sec {
     position: relative;
     border-radius: 7px;
     overflow: hidden;
-    
-    &:after{
+
+    &:after {
       pointer-events: none;
       content: "";
       position: absolute;
@@ -99,7 +99,14 @@
       right: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, rgb(0, 0, 0) -14%, rgba(0, 0, 0, 0.08) 13%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.33) 80%, rgb(0 0 0 / 90%) 100%);
+      background: linear-gradient(
+        90deg,
+        rgb(0, 0, 0) -14%,
+        rgba(0, 0, 0, 0.08) 13%,
+        rgba(0, 0, 0, 0) 45%,
+        rgba(0, 0, 0, 0.33) 80%,
+        rgb(0 0 0 / 90%) 100%
+      );
       // z-index: -1;
     }
   }
@@ -110,11 +117,18 @@
     .left-sec {
       flex-basis: 322px;
     }
-    .right-sec  {
+    .right-sec {
       margin: 0;
       width: 500px;
-      &:after{
-        background: linear-gradient(90deg, rgb(0 0 0) -14%, rgb(0 0 0 / 8%) 13%, rgb(0 0 0 / 0%) 45%, rgb(0 0 0 / 33%) 57%, rgb(0, 0, 0) 70%);
+      &:after {
+        background: linear-gradient(
+          90deg,
+          rgb(0 0 0) -14%,
+          rgb(0 0 0 / 8%) 13%,
+          rgb(0 0 0 / 0%) 45%,
+          rgb(0 0 0 / 33%) 57%,
+          rgb(0, 0, 0) 70%
+        );
       }
     }
   }

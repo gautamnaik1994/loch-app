@@ -9,17 +9,14 @@ const settings = {
   arrows: false,
   autoplay: true,
   autoplaySpeed: 3000,
-  // centerMode: true,
-  rows:1,
+  rows: 1,
   variableWidth: true,
-
 };
 
-export default function Carousel() {
+function Carousel() {
   return (
     <Slider {...settings}>
-
-     <div className="n-slide n-1">
+      <div className="n-slide n-1">
         <div className="top-section">
           <img src="bell_2.svg" alt="bell" />
           <button className="small-btn">Save</button>
@@ -61,7 +58,9 @@ export default function Carousel() {
           </select>
           <p>becomes active</p>
         </div>
-      </div> 
+      </div>
     </Slider>
   );
 }
+
+export default Carousel;

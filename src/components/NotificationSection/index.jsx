@@ -15,7 +15,6 @@ const NotificationSection = () => (
     <div className='right-sec'>
       <NotificationCarousel />
     </div>
-
   </section>
 );
 

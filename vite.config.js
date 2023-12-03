@@ -1,9 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
+let isProduction = process.env.NODE_ENV === 'production'
+console.log('isProduction', isProduction)
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:"/loch-app/",
+  base: isProduction? '/loch-app/':"/",
   plugins: [react()],
   server: {
     port: 3000,

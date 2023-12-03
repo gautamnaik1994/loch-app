@@ -6,7 +6,6 @@ function SignUp() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (!validateEmail(email)) {
       setIsError(true);
     } else {
@@ -26,11 +25,22 @@ function SignUp() {
         <h1>Sign up for exclusive access.</h1>
         <form onSubmit={handleSubmit} noValidate>
           <div className="input-group">
-            <input type="email" placeholder="Your email address" value={email}
-              onChange={(e) => setEmail(e.target.value)} />
-            {isError && <div className="error-message">Please enter valid email address</div>}
+            <input
+              type="email"
+              placeholder="Your email address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            {isError && (
+              <div className="error-message">
+                Please enter valid email address
+              </div>
+            )}
           </div>
-          <button role="button" type="submit" className="big-btn"> Get Started </button>
+          <button role="button" type="submit" className="big-btn">
+            {" "}
+            Get Started{" "}
+          </button>
         </form>
         <p> You’ll receive an email with an invite link to join. </p>
       </div>
