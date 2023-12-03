@@ -23,16 +23,6 @@
     box-shadow:
       0px 1px 1px 0px rgba(0, 0, 0, 0.04),
       0px 4px 10px 0px rgba(0, 0, 0, 0.04);
-
-    &:focus,
-    &:active,
-    &:focus-visible {
-      outline: none;
-      border: 1px solid var(--bg-color);
-    }
-    &:hover {
-      box-shadow: 0px 0px 2px 2px #19191a9e;
-    }
   }
   h1 {
     color: #b0b1b3;
@@ -65,7 +55,11 @@
     margin: 0;
     padding: 0;
     min-width: 500px;
-    width: calc(100vw - var(--section-width) - var(--left-padding) - 63px);
+    width: calc(
+      100vw - var(--section-width) - var(--left-padding) - var(
+          --middle-gap-width
+        )
+    );
     .inner {
       width: 340px;
     }

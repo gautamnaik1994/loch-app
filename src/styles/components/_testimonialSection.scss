@@ -7,9 +7,6 @@
     margin-bottom: 20px;
   }
   .inner{
-    hr{
-      margin-bottom: 0;
-     }
     margin-bottom: 40px;
   }
  
@@ -27,7 +24,6 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
     width:100%;
-  
   }
   .t-slides::-webkit-scrollbar {
     display: none;
@@ -80,10 +76,7 @@
       padding-right: 100px;
     }
     .t-slide {
-      flex-shrink: 0;
       flex-basis:353px;
-      display: block;
-      margin-right: 20px;
       &.t-3{
         flex-basis:531px;
       }
@@ -91,7 +84,6 @@
         margin-left: 100px;
       }
       &:last-child{
-        display: block;
         width:300px;
         background: transparent;
       }

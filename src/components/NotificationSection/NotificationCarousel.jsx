@@ -23,13 +23,13 @@ function Carousel() {
         </div>
         <div className="bottom-section">
           <p>We’ll be sending notifications to you here</p>
-          <input type="text" value="hello@gmail.com" />
+          <input type="email" value="hello@gmail.com" />
         </div>
       </div>
       <div className="n-slide n-2">
         <div className="top-section">
-          <img src="bar_chart.svg" alt="bell" />
-          <input type="checkbox" checked onChange={() => { }} />
+          <img src="bar_chart.svg" alt="bar chart" />
+          <input type="checkbox" defaultChecked/>
         </div>
         <div className="bottom-section">
           <p>Notify me when any wallets move more than</p>
@@ -42,8 +42,8 @@ function Carousel() {
       </div>
       <div className="n-slide n-3">
         <div className="top-section">
-          <img src="clock.svg" alt="bell" />
-          <input type="checkbox" checked onChange={() => { }} />
+          <img src="clock.svg" alt="clock" />
+          <input type="checkbox" defaultChecked />
         </div>
         <div className="bottom-section">
           <p>
