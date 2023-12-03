@@ -21,7 +21,7 @@ export default function Carousel() {
 
      <div className="n-slide n-1">
         <div className="top-section">
-          <img src="/bell_2.svg" alt="bell" />
+          <img src="bell_2.svg" alt="bell" />
           <button className="small-btn">Save</button>
         </div>
         <div className="bottom-section">
@@ -31,7 +31,7 @@ export default function Carousel() {
       </div>
       <div className="n-slide n-2">
         <div className="top-section">
-          <img src="/bar_chart.svg" alt="bell" />
+          <img src="bar_chart.svg" alt="bell" />
           <input type="checkbox" checked onChange={() => { }} />
         </div>
         <div className="bottom-section">
@@ -45,7 +45,7 @@ export default function Carousel() {
       </div>
       <div className="n-slide n-3">
         <div className="top-section">
-          <img src="/clock.svg" alt="bell" />
+          <img src="clock.svg" alt="bell" />
           <input type="checkbox" checked onChange={() => { }} />
         </div>
         <div className="bottom-section">

@@ -7,7 +7,7 @@ function TestimonialsSection() {
       <hr />
       </div>
 
-      <img src="/logo.svg" className="logo"/>
+      <img src="logo.svg" className="logo"/>
       <Carousel />
     </section>
   );
